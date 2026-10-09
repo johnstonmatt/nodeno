@@ -1,0 +1,19 @@
+{
+  "name": "nodeno",
+  "version": "0.1.0",
+  "description": "Run Node 26 with Deno-style npm: and jsr: imports",
+  "type": "module",
+  "bin": {
+    "nodeno": "./bin/nodeno.mjs"
+  },
+  "exports": {
+    "./register": "./src/register.mjs"
+  },
+  "files": ["bin", "src"],
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
